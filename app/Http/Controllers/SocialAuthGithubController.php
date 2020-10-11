@@ -17,10 +17,10 @@ class SocialAuthGithubController extends Controller
     {
         return Socialite::driver('github')->redirect();
     }
-/**
+    /**
      * Return a callback method from github api.
      *
-     * @return callback URL from google
+     * @return callback URL from github
      */
     public function callback(SocialGithubAccountService $service)
     {
