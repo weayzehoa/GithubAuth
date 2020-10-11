@@ -26,3 +26,4 @@
     c. 修改完成後執行 php artisan migrate:refresh
 
 7. 新增 app/Services 目錄及 SocialGithubAccountService.php 並修改它
+8. 修改 login 視圖，新增一個按鈕
