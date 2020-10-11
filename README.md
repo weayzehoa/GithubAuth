@@ -24,3 +24,5 @@
     a. 修改 app/SocialGithubAccount.php
     b. 修改 database/migrations/2020_10_11_054309_create_social_github_accounts_table.php
     c. 修改完成後執行 php artisan migrate:refresh
+
+7. 新增 app/Services 目錄及 SocialGithubAccountService.php 並修改它
