@@ -14,3 +14,7 @@
 
 4. 建立 SocialAuthGithubController 控制器 並修改
     php artisan make:controller SocialAuthGithubController
+
+5. 修改 route/web.php 新增
+    Route::get('/redirect', 'SocialAuthGithubController@redirect');
+    Route::get('/callback', 'SocialAuthGithubController@callback');
