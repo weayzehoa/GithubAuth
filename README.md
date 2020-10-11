@@ -18,3 +18,9 @@
 5. 修改 route/web.php 新增
     Route::get('/redirect', 'SocialAuthGithubController@redirect');
     Route::get('/callback', 'SocialAuthGithubController@callback');
+
+6. 建立 Model 及 修改相關檔案
+    php artisan make:model SocialGithubAccount -m
+    a. 修改 app/SocialGithubAccount.php
+    b. 修改 database/migrations/2020_10_11_054309_create_social_github_accounts_table.php
+    c. 修改完成後執行 php artisan migrate:refresh
