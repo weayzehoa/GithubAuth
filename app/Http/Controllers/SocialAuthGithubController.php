@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Socialite;
+use App\Services\SocialGithubAccountService;
 
 class SocialAuthGithubController extends Controller
 {
   /**
-   * Create a redirect method to google api.
+   * Create a redirect method to github api.
    *
    * @return void
    */
@@ -16,7 +18,7 @@ class SocialAuthGithubController extends Controller
         return Socialite::driver('github')->redirect();
     }
 /**
-     * Return a callback method from google api.
+     * Return a callback method from github api.
      *
      * @return callback URL from google
      */

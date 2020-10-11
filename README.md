@@ -27,3 +27,5 @@
 
 7. 新增 app/Services 目錄及 SocialGithubAccountService.php 並修改它
 8. 修改 login 視圖，新增一個按鈕
+9. 測試，失敗，修正錯誤。
+10. 完成。
